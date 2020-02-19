@@ -1,11 +1,11 @@
 {
-    "name" : "Screen Capturing",
-    "author": "Muaz Khan",
+    "name" : "屏幕共享",
+    "author": "悟空小子",
     "version" : "3.7",
     "manifest_version" : 2,
     "minimum_chrome_version": "34",
     "description" : "Capture full-screen or specific application's screen on any HTTPs domain!",
-    "homepage_url": "https://github.com/muaz-khan/Chrome-Extensions/tree/master/desktopCapture",
+    "homepage_url": "https://portal.2099.com.cn/#/rooms",
     "background": {
         "scripts": ["background-script.js"],
         "persistent": false
@@ -14,7 +14,7 @@
        "js": [ "content-script.js" ],
        "all_frames": true,
        "run_at": "document_end",
-       "matches": ["https://www.webrtc-experiment.com/*"]
+       "matches": ["https://portal.2099.com.cn/*"]
     }],
     "icons" : {
         "48" : "icon.png"
