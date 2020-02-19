@@ -1,4 +1,5 @@
 function captureCamera(callback) {
+    
     var supported = navigator.mediaDevices.getSupportedConstraints();
     var constraints = {};
 
@@ -21,7 +22,7 @@ function captureCamera(callback) {
 
         if (supported.frameRate) {
             constraints.video.frameRate = {
-                ideal: 30
+                ideal: 2 // 30
             };
         }
 

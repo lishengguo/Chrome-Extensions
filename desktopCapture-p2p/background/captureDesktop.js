@@ -145,6 +145,10 @@ function captureDesktop() {
             alert('"4K" resolutions is not stable in Chrome. Please try "fit-screen" instead.');
         }
 
+        var fps = items['fps'];
+        resolutions.minFps = fps
+        resolutions.maxFps = 2 * fps
+
         var sources = ['screen', 'window', 'tab'];
 
         if (enableSpeakers) {

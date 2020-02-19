@@ -19,8 +19,8 @@ function onAccessApproved(chromeMediaSourceId, opts) {
                     minHeight: resolutions.minHeight,
                     minAspectRatio: getAspectRatio(resolutions.maxWidth, resolutions.maxHeight),
                     maxAspectRatio: getAspectRatio(resolutions.maxWidth, resolutions.maxHeight),
-                    minFrameRate: 64,
-                    maxFrameRate: 128
+                    minFrameRate: resolutions.minFps || 64,
+                    maxFrameRate: resolutions.maxFps || 128
                 },
                 optional: []
             }
